@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:rgb(227,212,173);
+}
+
+.container {
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid rgb(101,67,33);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container .form.signin,
+.container.signinForm .form.signup {
+  display: none;
+}
+
+.container.signinForm .form.signin {
+  display: flex;
+}
+
+.container .form h2 {
+  color: beige;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  
+}
+.container .form h3 {
+  color:rgb(101,67,33) ;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size:28;
+  
+}
+.container .form a {
+  color:rgb(101,67,33) ;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size:28;
+  
+}
+
+.container .form .inputBox {
+  position: relative;
+  width: 300px;
+}
+
+.container .form .inputBox input {
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 100%;
+  background: rgb(101,67,33);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+  font-size: 1em;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+  outline: none;
+}
+
+.container .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: beige;
+}
+
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span {
+  color: rgb(101,67,33);
+  border: 1px solid beige;
+  background: rgb(227,212,173);
+  transform: translateX(25px) translateY(-7px);
+  font-size: 0.6em;
+  padding: 0 8px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus {
+  border: 1px solid beige;
+}
+
+.container .form .inputBox i {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 25px;
+  padding: 2px 0;
+  padding-right: 8px;
+  color:beige;
+  border-right: 1px solid beige;
+}
+
+.container .form .inputBox input[type="submit"] {
+  background:rgb(101,67,33);
+  color: beige;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 
+    -5px -15px -15px rgb(101,67,33),
+  -5px -5px -15px rgb(101,67,33) ,
+    inset -5px -5px 15px rgb(101,67,33),
+    inset 5px 5px 15px rgb(101,67,33);
+	
+}
+
+.container .form p {
+  color: rgb(101,67,33);
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.container .form p a {
+  font-weight: 500;
+  color: rgb(101,67,33);
+}
